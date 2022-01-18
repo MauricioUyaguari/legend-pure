@@ -42,6 +42,7 @@ Class meta::external::format::json::executionPlan::test::Firm
 function <<meta::pure::profiles::test.Test>> meta::external::format::json::executionPlan::test::planGenerationForSimpleJsonSchema(): Boolean[1]
 {
    let extensions = meta::external::shared::format::routerExtensions('externalFormat', meta::external::format::json::jsonFormatExtension());
+   print($extensions);
    
    let schemaSet = ^SchemaSet(
       name    = 'TestSchema',
